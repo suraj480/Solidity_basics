@@ -1,5 +1,6 @@
-//pragma solidity ^0.8.20;
+// SPDX-License-Identifier: GPL-3.0
 
+pragma solidity >=0.7.0 <0.9.0;
 contract Identity {
     string name;
     uint age;
@@ -20,5 +21,8 @@ contract Identity {
      function getClass() view  public  returns (string memory)
     {
         return class;
+    }
+    function setAge() public {
+        age=age+2;
     }
 }
